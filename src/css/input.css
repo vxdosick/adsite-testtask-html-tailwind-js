@@ -25,6 +25,9 @@ html, body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+    /* font-family: "Roboto Flex", sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: "Roboto Condensed", sans-serif; */
 }
 
 input, button, textarea{font-family: inherit;}
@@ -41,7 +44,10 @@ html {
 }
 h1,h2, h3, h4, h5, h6{font-weight: 400;}
 /* --------------------------------------- */
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .button {
     padding: 12px 24px;
     background-color: #0147FF;
@@ -60,10 +66,9 @@ h1,h2, h3, h4, h5, h6{font-weight: 400;}
     gap: 6px;
     padding-bottom: 6px;
     border-bottom: 1px solid white;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+    font-size: 14px;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 150%;
 }
 .footer__bottom {
     border-top: 1px solid white;

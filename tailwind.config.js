@@ -12,12 +12,14 @@ module.exports = {
         "footer": "100%"
       },
       width: {
-        "footer": "100%"
       },
       padding: {
         "wrapper--px": "15px",
       },
-      margin: {
+      fontFamily: {
+        "Roboto-Flex": ['"Roboto Flex"', 'sans-serif'],
+        "Bebas-Neue": ['"Bebas Neue"', 'sans-serif'],
+        "Roboto-Condensed": ['"Roboto Condensed"', 'sans-serif'],
       }
     },
   },
