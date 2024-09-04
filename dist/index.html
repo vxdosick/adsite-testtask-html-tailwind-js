@@ -1,151 +1,168 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>CarsSpot</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="wrapper__container max-w-wrapper bg-slate-100 mx-auto relative">
-            <img src="./assets/img/hero/decoration.png" alt="decoration" class="
-                absolute right-[72px] top-0">
-            <header class="header px-wrapper--px">
-                <div class="header__container flex justify-between items-center py-4 
-                container relative">
-                    <div class="header__logo">
-                        <a href="/" class="flex items-center gap-3">
-                            <img src="./assets/img/logo.svg" alt="logo">
-                        </a>
-                    </div>
-                    <nav class="header__menu absolute left-1/2 transform -translate-x-1/2 
-                    font-Roboto-Flex ">
-                        <ul class="flex items-center gap-6">
-                            <li><a href="#" class="text-text">Galeria zdjęć</a></li>
-                            <li><a href="#" class="text-text">FaQ</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__contact flex">
-                        <a href="tel:+0" class="text-white flex button 
-                        font-Roboto-Flex">Zadzwoń do nas</a>
-                    </div>
-                </div>
-            </header>
-            <main class="main px-wrapper--px">
-                <section class="hero pb-[362px] pt-[120px] relative">
-                    <div class="hero__container container">
-                        <div class="hero__content">
-                            <h1 class="hero__title mb-[32px] font-Bebas-Neue text-[76px] 
-                            max-w-[650px]">
-                                Sprzedajemy samochody z
-                                 europy</h1>
-                            <p class="hero__text mb-[48px] font-Roboto-Condensed text-[16px]
-                            max-w-[270px] leading-[150%]">
-                                Kup komfortowy pojazd, aby każda 
-                                podróż
-                                była wyjątkowym przeżyciem.
-                            </p>
-                            <div class="hero__buttons flex gap-6">
-                                <a href="#" class="text-white flex button 
-                                font-Roboto-Flex font-semibold">
-                                Zobacz zdjęcia
-                            </a>
-                                <a href="tel:+0" class="text-blue flex 
-                                button--secondary font-Roboto-Flex font-semibold">
-                                Zadzwoń do nas
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./assets/img/hero/Cars.png" alt="cars" class="absolute 
-                    right-[-15px] bottom-[92px]">
-                </section>
-                <section class="cars pt-20">
-                    <div class="cars__container container">
-                        <div class="cars__content">
-                            <p class="cars__subtitle text-blue 
-                            font-Roboto-Condensed leading-[150%] text-[21px]">
-                            Prezentacja firmy</p>
-                            <h2 class="cars__title text-text text-[40px] mb-6 leading-[150%]
-                            font-Bebas-Neue">
-                                Zobacz naszą Galerię zdjęć</h2>
-                            <div class="cars__links flex items-center gap-12 leading-[150%] 
-                            text-[15px] 
-                            font-Roboto-Flex">
-                                <a href="#">Samochody osobowe</a>
-                                <a href="#">Samochody dostawcze</a>
-                            </div>
-                        </div>
-                        <div class="cars__slider py-20 bg-slate-600"></div>
-                    </div>
-                </section>
-            </main>
+  </head>
+  <body>
+      <header class="header">
+        <div class="header__container flex justify-between items-center py-4
+         relative mx-auto max-w-container px-wrapper--px">
+         <img src="./assets/img/hero/decoration.png" alt="decoration" class="absolute 
+        right-0 top-0 z-[-1]" />
+          <div class="header__logo">
+            <a href="/" class="flex items-center gap-3">
+              <img src="./assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav class="header__menu absolute left-1/2 transform -translate-x-1/2 
+          font-Roboto-Flex">
+            <ul class="flex items-center gap-6">
+              <li><a href="#" class="text-text">Galeria zdjęć</a></li>
+              <li><a href="#" class="text-text">FaQ</a></li>
+            </ul>
+          </nav>
+          <div class="header__contact flex">
+            <a href="tel:+0" class="text-white flex button font-Roboto-Flex">
+                Zadzwoń do nas
+            </a>
+          </div>
         </div>
-        <footer class="footer bg-text">
-            <div class="footer__top px-wrapper--px">
-                <div class="footer__topcontainer container text-white">
-                    <div class="footer__topcontent flex items-center py-[88px] 
-                    justify-between gap-12">
-                        <div class="footer__firstsect max-w-[576px]">
-                            <h3 class="mb-4 font-Bebas-Neue text-[25px] leading-[150%]">
-                                Id nostrud enim esse consectetur in eu mollit
-                                 fugiat aute.
-                                Velit nulla commodo.
-                            </h3>
-                            <p class="mb-6 font-Roboto-Condensed leading-[150%] text-[14px]">
-                                Mauris varius ipsum mauris, rutrum lobortis magna
-                                 efficitur a.
-                                Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                                efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et 
-                                [...]
-                            </p>
-                            <button class="button__underline">
-                                <span>Rozwiń</span>
-                                <span>&#x2193;</span>
-                            </button>
-                        </div>
-                        <div class="footer__lastsect max-w-[576px]">
-                            <h3 class="mb-4 font-Bebas-Neue text-[25px] leading-[150%]">
-                                Id nostrud enim esse consectetur in eu mollit fugiat aute.
-                                Velit nulla commodo.
-                            </h3>
-                            <p class="mb-6 font-Roboto-Condensed leading-[150%] text-[14px]">
-                                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                                Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                                efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et
-                                 [...]
-                            </p>
-                            <button class="button__underline">
-                                <span>Rozwiń</span>
-                                <span>&#x2193;</span>
-                            </button>
-                        </div>
+      </header>
+      <main class="main">
+        <section class="hero relative">
+          <div class="wrapper__container max-w-wrapper mx-auto pb-[362px] pt-[120px]
+          relative">
+            <div class="hero__container px-wrapper--px">
+              <div class="hero__content max-w-container mx-auto">
+                <h1 class="hero__title mb-[32px] font-Bebas-Neue text-[76px] max-w-[650px]">
+                  Sprzedajemy samochody z europy
+                </h1>
+                <p class="hero__text mb-[48px] font-Roboto-Condensed text-[16px] max-w-[270px]
+                 leading-[150%]">
+                  Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.
+                </p>
+                <div class="hero__buttons flex gap-6">
+                  <a href="#" class="text-white flex button font-Roboto-Flex 
+                  font-semibold">Zobacz zdjęcia</a>
+                  <a href="tel:+0" class="text-blue flex button--secondary font-Roboto-Flex
+                   font-semibold">
+                    Zadzwoń do nas
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/img/hero/Cars.png" alt="cars" class="absolute right-0
+             bottom-[92px]"/>
+          </div>
+        </section>
+        <section class="cars pt-20">
+          <div class="cars__container">
+            <div class="cars__content max-w-container px-wrapper--px mx-auto">
+              <p class="cars__subtitle text-blue font-Roboto-Condensed leading-[150%] 
+              text-[21px]">Prezentacja firmy</p>
+              <h2 class="cars__title text-text text-[40px] mb-6 leading-[150%] 
+              font-Bebas-Neue">
+                Zobacz naszą Galerię zdjęć
+              </h2>
+              <div class="cars__links flex items-center gap-12 leading-[150%] text-[15px] 
+              font-Roboto-Flex">
+                <a href="#">Samochody osobowe</a>
+                <a href="#">Samochody dostawcze</a>
+              </div>
+            </div>
+            <div class="">
+                <div class="cars__slider swiper py-20 max-w-wrapper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide max-w-[100%]">
+                        <img src="./assets/img/cars/car-1.png" alt="car" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/img/cars/car-2.png" alt="car" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/img/cars/car-3.png" alt="car" />
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="./assets/img/cars/car-1.png" alt="car" />
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="./assets/img/cars/car-2.png" alt="car" />
+                      </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="footer__bottom py-6 px-wrapper--px">
-                <div class="footer__bottomcontainer container">
-                    <div class="footer__bottomcontent flex items-center justify-between">
-                        <div class="footer__logo">
-                            <a href="/" class="text-white font-Roboto-Condensed font-bold
-                            text-[16px]">
-                                Cars Spot
-                            </a>
-                        </div>
-                        <div class="footer__privacy">
-                            <a href="#" class="text-white underline 
-                            font-Roboto-Condensed text-[16px]">
-                            Polityka prywatności
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer bg-text">
+        <div class="footer__top">
+          <div class="footer__topcontainer max-w-container px-wrapper--px text-white mx-auto">
+            <div class="footer__topcontent flex items-center py-[88px] justify-between gap-12">
+              <div class="footer__firstsect max-w-[576px]">
+                <h3 class="mb-4 font-Bebas-Neue text-[25px] leading-[150%]">
+                  Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla
+                 commodo.
+                </h3>
+                <p class="mb-6 font-Roboto-Condensed leading-[150%] text-[14px]">
+                  Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas,
+                   nisl vehicula feugiat
+                  ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum
+                   et [...]
+                </p>
+                <button class="button__underline">
+                  <span>Rozwiń</span>
+                  <span>&#x2193;</span>
+                </button>
+              </div>
+              <div class="footer__lastsect max-w-[576px]">
+                <h3 class="mb-4 font-Bebas-Neue text-[25px] leading-[150%]">
+                  Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla
+                   commodo.
+                </h3>
+                <p class="mb-6 font-Roboto-Condensed leading-[150%] text-[14px]">
+                  Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas,
+                   nisl vehicula feugiat
+                  ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum
+                   et [...]
+                </p>
+                <button class="button__underline">
+                  <span>Rozwiń</span>
+                  <span>&#x2193;</span>
+                </button>
+              </div>
             </div>
-        </footer>
-    </div>
-</body>
+          </div>
+        </div>
+        <div class="footer__bottom py-6">
+          <div class="footer__bottomcontainer max-w-container px-wrapper--px mx-auto">
+            <div class="footer__bottomcontent flex items-center justify-between">
+              <div class="footer__logo">
+                <a href="/" class="text-white font-Roboto-Condensed font-bold text-[16px]">
+                    Cars Spot
+                </a>
+              </div>
+              <div class="footer__privacy">
+                <a href="#" class="text-white underline font-Roboto-Condensed 
+                text-[16px]">Polityka prywatności</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

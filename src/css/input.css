@@ -44,10 +44,6 @@ html {
 }
 h1,h2, h3, h4, h5, h6{font-weight: 400;}
 /* --------------------------------------- */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 .button {
     padding: 12px 24px;
     background-color: #0147FF;
@@ -72,4 +68,28 @@ h1,h2, h3, h4, h5, h6{font-weight: 400;}
 }
 .footer__bottom {
     border-top: 1px solid white;
+}
+
+
+.swiper {
+    max-width: 1470px;
+    padding: 0 135px;
+    height: 678px;
+  }
+  
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+.swiper-pagination {
+    position: relative;
+    margin-top: -80px;
 }

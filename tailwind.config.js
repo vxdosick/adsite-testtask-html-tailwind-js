@@ -9,9 +9,7 @@ module.exports = {
       },
       maxWidth: {
         "wrapper": "1470px",
-        "footer": "100%"
-      },
-      width: {
+        "container": "1230px"
       },
       padding: {
         "wrapper--px": "15px",
