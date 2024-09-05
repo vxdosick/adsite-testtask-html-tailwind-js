@@ -4,7 +4,12 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "sm-1": "320px",
+        "s-320": "320px",
+        "s-350": "350px",
+        "s-400": "400px",
+        "s-500": "500px",
+        "s-550": "550px",
+        "s-670": "670px",
         "s-700": "700px"
       },
       colors: {

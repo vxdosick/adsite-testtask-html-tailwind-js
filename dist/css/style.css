@@ -562,12 +562,8 @@ video {
   position: relative;
 }
 
-.bottom-\[92px\] {
-  bottom: 92px;
-}
-
-.left-1\/2 {
-  left: 50%;
+.bottom-\[-30px\] {
+  bottom: -30px;
 }
 
 .right-0 {
@@ -576,6 +572,10 @@ video {
 
 .top-\[0px\] {
   top: 0px;
+}
+
+.bottom-\[0px\] {
+  bottom: 0px;
 }
 
 .z-\[-1\] {
@@ -603,8 +603,16 @@ video {
   margin-bottom: 48px;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .max-w-\[100\%\] {
@@ -631,17 +639,12 @@ video {
   max-width: 1470px;
 }
 
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -652,6 +655,10 @@ video {
   gap: 3rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -660,9 +667,29 @@ video {
   gap: 1.5rem;
 }
 
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
 .bg-text {
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+}
+
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .px-wrapper--px {
@@ -690,16 +717,16 @@ video {
   padding-bottom: 88px;
 }
 
-.pb-\[362px\] {
-  padding-bottom: 362px;
+.pb-\[181px\] {
+  padding-bottom: 181px;
 }
 
 .pt-20 {
   padding-top: 5rem;
 }
 
-.pt-\[120px\] {
-  padding-top: 120px;
+.pt-\[60px\] {
+  padding-top: 60px;
 }
 
 .font-Bebas-Neue {
@@ -726,20 +753,20 @@ video {
   font-size: 16px;
 }
 
-.text-\[21px\] {
-  font-size: 21px;
+.text-\[18px\] {
+  font-size: 18px;
 }
 
-.text-\[25px\] {
-  font-size: 25px;
+.text-\[21px\] {
+  font-size: 21px;
 }
 
 .text-\[40px\] {
   font-size: 40px;
 }
 
-.text-\[76px\] {
-  font-size: 76px;
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .font-bold {
@@ -932,17 +959,126 @@ h1,h2, h3, h4, h5, h6{
 }
 
 @media (min-width: 320px) {
-  .sm-1\:hidden {
-    display: none;
+  .s-320\:bottom-\[20px\] {
+    bottom: 20px;
+  }
+
+  .s-320\:bottom-\[-10px\] {
+    bottom: -10px;
+  }
+
+  .s-320\:bottom-\[-20px\] {
+    bottom: -20px;
+  }
+
+  .s-320\:bottom-\[-30px\] {
+    bottom: -30px;
   }
 }
 
-@media (min-width: 700px) {
-  .s-700\:visible {
+@media (min-width: 350px) {
+  .s-350\:hidden {
+    display: none;
+  }
+
+  .s-350\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .s-350\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .s-350\:text-\[76px\] {
+    font-size: 76px;
+  }
+}
+
+@media (min-width: 400px) {
+  .s-400\:bottom-\[92px\] {
+    bottom: 92px;
+  }
+
+  .s-400\:bottom-\[52px\] {
+    bottom: 52px;
+  }
+
+  .s-400\:bottom-\[2px\] {
+    bottom: 2px;
+  }
+
+  .s-400\:bottom-\[-2px\] {
+    bottom: -2px;
+  }
+
+  .s-400\:bottom-\[-50px\] {
+    bottom: -50px;
+  }
+
+  .s-400\:gap-12 {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .s-500\:absolute {
+    position: absolute;
+  }
+
+  .s-500\:left-1\/2 {
+    left: 50%;
+  }
+
+  .s-500\:block {
+    display: block;
+  }
+
+  .s-500\:hidden {
+    display: none;
+  }
+
+  .s-500\:-translate-x-1\/2 {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .s-500\:transform {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .s-500\:text-\[25px\] {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 550px) {
+  .s-550\:bottom-\[92px\] {
+    bottom: 92px;
+  }
+
+  .s-550\:bottom-\[40px\] {
+    bottom: 40px;
+  }
+
+  .s-550\:pb-\[362px\] {
+    padding-bottom: 362px;
+  }
+
+  .s-550\:pt-\[120px\] {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 670px) {
+  .s-670\:visible {
     visibility: visible;
   }
 
-  .s-700\:hidden {
+  .s-670\:block {
+    display: block;
+  }
+
+  .s-670\:hidden {
     display: none;
   }
 }
