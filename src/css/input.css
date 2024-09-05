@@ -69,27 +69,50 @@ h1,h2, h3, h4, h5, h6{font-weight: 400;}
 .footer__bottom {
     border-top: 1px solid white;
 }
-
-
+/* --------------------------------------- */
 .swiper {
-    max-width: 1470px;
-    padding: 0 135px;
-    height: 678px;
+    max-width: 100%;
+    padding: 80px 20px 80px 20px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
   }
   
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-  height: auto;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-}
-.swiper-pagination {
+  @media (min-width: 1024px) {
+    .swiper {
+      padding: 80px 135px 80px 135px;  /* Увеличиваем отступы для больших экранов */
+      max-width: 1470px;
+      height: auto;
+    }
+  }
+  
+  .swiper-wrapper {
+    height: auto;
+    top: 0;
     position: relative;
-    margin-top: -80px;
-}
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .swiper-pagination {
+    position: relative;
+    margin-top: 48px;
+  }
+  
+  @media (min-width: 1024px) {
+    .swiper-pagination {
+      bottom: 48px;
+    }
+  }

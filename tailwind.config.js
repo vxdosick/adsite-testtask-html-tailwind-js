@@ -3,6 +3,10 @@ module.exports = {
   content: ["./dist/index.html"],
   theme: {
     extend: {
+      screens: {
+        "sm-1": "320px",
+        "s-700": "700px"
+      },
       colors: {
         "blue": "#0147FF",
         "text": "#282828",
