@@ -12,5 +12,8 @@
   "description": "Adsite zadanie testowe.",
   "devDependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4"
   }
 }

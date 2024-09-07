@@ -48,12 +48,23 @@ h1,h2, h3, h4, h5, h6{font-weight: 400;}
     padding: 12px 24px;
     background-color: #0147FF;
     border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #3870ff;
+  transform: scale(1.05);
 }
 .button--secondary {
     padding: 12px 24px;
     background-color: #fff;
     border-radius: 8px;
     border: 1px solid #0147FF;
+    transition: all 0.3s ease-in-out;
+
+}
+.button--secondary:hover {
+  background-color: #ccdbff;
+  transform: scale(1.05);
 }
 .button__underline {
     color: white;
@@ -80,7 +91,7 @@ h1,h2, h3, h4, h5, h6{font-weight: 400;}
   
   @media (min-width: 1024px) {
     .swiper {
-      padding: 80px 135px 80px 135px;  /* Увеличиваем отступы для больших экранов */
+      padding: 80px 135px 80px 135px;
       max-width: 1470px;
       height: auto;
     }
@@ -116,3 +127,4 @@ h1,h2, h3, h4, h5, h6{font-weight: 400;}
       bottom: 48px;
     }
   }
+  
