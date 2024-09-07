@@ -33,3 +33,30 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+const footerLastSect = document.querySelectorAll(".footer__opensect");
+
+footerLastSect.forEach(section => {
+  const buttonUnderline = section.querySelector(".button__underline");
+  const paragraph = section.querySelector("p");
+  const footerOpendecor = paragraph.querySelector(".footer__opendecor");
+  buttonUnderline.addEventListener("click", () => {
+    if (paragraph.classList.contains("max-h-[42px]")) {
+      paragraph.classList.remove("max-h-[42px]");
+      paragraph.classList.add("max-h-[500px]");
+      paragraph.textContent = paragraph.textContent.replace(" [...]", "")
+    } else {
+      paragraph.classList.remove("max-h-[500px]");
+      paragraph.classList.add("max-h-[42px]");
+      if (!paragraph.textContent.includes("[...]")) {
+        paragraph.textContent += " [...]";
+      }
+    }
+  })
+})
+
+
+
+
+// footerOpendecor.textContent = "[...]
+// , footerOpendecor.textContent = ""
